@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<button onclick="hienthi()">check</button>
+<script>
+//    var star = new Object({});
+//    star.ten="KEPLER";
+//    star.loai="sao chổi";
+//    star.quydao="elip";
+    function star(ten,loai,quydao) {
+        this.ten = ten;
+        this.loai = loai;
+        this.quydao = quydao;
+        this.bio = function () {
+            alert("aaa" + this.loai + "_" + this.name + ".");
+        }
+    }
+    function hienthi(){
+        var a=new star('Huy','Hiền','Hòa');//vi doi tuong star co tham so truyen vao
+        for(var bien in a){
+            alert(bien+"="+a[bien]);
+        }
+    }
+    var p = new star();//khong the su dụng prototype neu tao doi tuong bang tao {} hoặc new Object()
+
+
+</script>
+</body>
+</html>
